@@ -1,0 +1,77 @@
+:root {
+  /* background colors */
+  --poke-color: #e4000f;
+  --card-background: #f4f4f4;
+  --card-hover: #dedcdc;
+
+  /* font colors */
+
+  --dark: #222;
+  --light: #666;
+}
+
+body {
+  background-color: var(--poke-color);
+  color: white;
+  margin: 0;
+  font-family: rubik;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding-left: 0.5rem;
+  height: 2rem;
+  width: 15rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.card {
+  list-style: none;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: var(--card-background);
+  color: var(--dark);
+  text-align: center;
+}
+
+.card:hover {
+  background-color: var(--card-hover);
+}
+
+.card-title {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: normal;
+}
+.card-subtitle {
+  margin-top: 5px;
+  color: var(--light);
+  font-weight: lighter;
+}
+
+.card-image {
+  height: 180px;
+}
