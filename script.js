@@ -6,9 +6,8 @@ const fetchPokemon = async () => {
   // Display loading message
   pokedex.innerHTML = "<p>Loading...</p>";
 
+  const pokemon = [];
   try {
-    const pokemon = [];
-
     for (let i = 1; i <= 150; i++) {
       const url = `${BASE_URL}${i}`;
       const response = await fetch(url);
